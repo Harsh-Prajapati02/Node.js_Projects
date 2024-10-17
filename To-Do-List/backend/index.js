@@ -1,11 +1,14 @@
 const fs = require("fs")
 const express = require("express");
-const app = express();
-app.use(express.json())
 const cors=require('cors');
-app.use(cors());
-const PORT = 3500;
 
+const PORT = 3500;
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+// CRUD - CREATE | READ | UPDATE/EDIT | DELETE
+// READ
 app.get("/todo",(req,res)=>{
     fs.readFile("./db.json","utf-8",(err,data)=>{
         if(err){
@@ -15,13 +18,11 @@ app.get("/todo",(req,res)=>{
         else{
             const todo = JSON.parse(data);
             res.send(todo)
-            console.log(todo)
         }
     })
 })
 
-
-
+// CREATE
 app.post("/todo",(req,res)=>{
     fs.readFile("./db.json","utf-8",(err,data)=>{
         if(err) console.log(err);
@@ -38,6 +39,7 @@ app.post("/todo",(req,res)=>{
     })
 })
 
+// UPDATE
 app.put("/todo/:id",(req,res)=>{
     fs.readFile("./db.json","utf-8",(err,data)=>{
         if(err) console.log(err)
@@ -59,6 +61,7 @@ app.put("/todo/:id",(req,res)=>{
     })
 })
 
+// DELETE
 app.delete("/todo/:id",(req,res)=>{
     const taskId = req.params.id
     fs.readFile("./db.json","utf-8",(err,data)=>{
@@ -83,7 +86,7 @@ app.delete("/todo/:id",(req,res)=>{
         })
 })
 
-
+// Run Server
 app.listen(PORT,()=>{
-    console.log(`Server is running on ${PORT}`)
+    console.log(`Server is running on port ${PORT}`)
 })

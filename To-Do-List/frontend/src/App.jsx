@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid'; // Import UUID generator
+import { v4 as uuidv4 } from 'uuid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
   const [task, setTask] = useState('');
   const [editId, setEditId] = useState(null);
 
-  // Fetching tasks from the backend
   const getData = async () => {
     try {
       const response = await axios.get('http://localhost:3500/todo');
