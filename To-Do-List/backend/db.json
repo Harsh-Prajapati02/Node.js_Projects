@@ -1,0 +1,40 @@
+{
+    "tasks": [
+        {
+            "id": "8c9d5063-bfa2-4c69-aa90-f20b01e0b463",
+            "task": "HTML"
+        },
+        {
+            "id": "d978daec-a780-46d5-816f-2ab63bca6041",
+            "task": "CSS"
+        },
+        {
+            "id": "dc852668-2794-4779-a0c7-5121a1e5ffa6",
+            "task": "Bootstrap"
+        },
+        {
+            "id": "97009985-0651-49cd-abb3-e6aa4949ba08",
+            "task": "JavaScript"
+        },
+        {
+            "id": "86d88a83-fd2f-46be-b5b7-70a0529830d1",
+            "task": "React"
+        },
+        {
+            "id": "11ae7535-b574-4b9c-8414-bffe46b5e937",
+            "task": "Redux"
+        },
+        {
+            "id": "81109c1c-b910-444b-b96c-343ff84a6558",
+            "task": "Node"
+        },
+        {
+            "id": "69962950-e7dc-48a3-9e1f-b8f5ea0ce257",
+            "task": "Express"
+        },
+        {
+            "id": "75f439f1-3788-40f3-8db2-b6ae02a498e6",
+            "task": "MongoDB"
+        }
+    ]
+}

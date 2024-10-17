@@ -1,0 +1,64 @@
+h1 {
+    text-decoration: underline;
+}
+
+form {
+    box-shadow: 0 0 10px 0px lightgray;
+    border-radius: 2px;
+    max-height: 213.2px;
+}
+
+input {
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    color: #000;
+    font-weight: 600;
+    outline: none;
+}
+
+.add-button {
+    border: 2px solid lightgray;
+    background-color: whitesmoke;
+    font-weight: 600;
+    color: #000;
+    border-radius: 2px;
+    transition: all 0.4s;
+}
+
+.add-button:hover {
+    background-color: #fff;
+}
+
+li {
+    border: 1px solid lightgray;
+    border-radius: 0px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.edit-btn {
+    border: 2px solid lightgray;
+    background-color: whitesmoke;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.4s;
+    padding: 7px 40px;
+    border-radius: 2px;   
+}
+
+.delete-btn {
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.4s;
+    padding: 7px 28px; 
+    border-radius: 2px;
+} 
+
+.edit-btn:hover , .delete-btn:hover {
+    background-color: #fff;
+}
