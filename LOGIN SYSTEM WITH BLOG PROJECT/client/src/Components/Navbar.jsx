@@ -13,6 +13,10 @@ export default function Navbar() {
                     Notes
                 </Link>
 
+                <Link to="/create-notes" className="navbar-brand font-weight-bold">
+                    Create-Notes
+                </Link>
+
                 <button
                     className="navbar-toggler"
                     type="button"

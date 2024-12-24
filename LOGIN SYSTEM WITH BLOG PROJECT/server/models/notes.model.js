@@ -5,7 +5,7 @@ const notesSchema = new mongoose.Schema({
     body: String,
     notesImage: {
         type: String,
-        default: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZNNdkTJ-dnUm4YXT9zzqkv0uMu-NxdnIk7w&s"
+        default: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT614dw3FzSVdBierVA7XqCtpWyDce-w4KVVQ&s"
     },
     userId: {
         type: String,

@@ -1,14 +1,33 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 export default function Login() {
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
     const navigate = useNavigate();
-    const handlesubmit = (e) => {
 
+    const handlesubmit = (e) => {
+        e.preventDefault();
+
+        let userData = { email, password };
+
+        axios.post(`${import.meta.env.VITE_BASEURL}/user/signin`, userData, {
+            withCredentials: true,
+        })
+        .then((response) => {
+            console.log(response.data);
+            toast.success("Login Successfull");
+            navigate("/");
+            
+            localStorage.setItem("userData", JSON.stringify(response.data.user));
+        })
+        .catch((error) => {
+            console.log(error);
+            toast.error(error.response.data.message);
+        })
     };
+
     return (
         <div
             className="min-vh-100 d-flex align-items-center justify-content-center"
