@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
 
-const NoteCard = ({ title, body, image, id, getAllUserNotes, userId }) => {
+const NoteCard = ({ title, image, id, getAllUserNotes, userId }) => {
 
     const handleDelete = (id) => {
         axios.delete(`${import.meta.env.VITE_BASEURL}/notes/delete/${id}`, {

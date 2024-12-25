@@ -1,9 +1,6 @@
-import axios from 'axios';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { toast } from "react-toastify";
 
-const AllUserNoteCard = ({ title, body, image, id, getAllNotes, userId }) => {
+const AllUserNoteCard = ({ title, body, image }) => {
 
     return (
         <div className='col-md-6 col-lg-4 mb-4 p-2'>
