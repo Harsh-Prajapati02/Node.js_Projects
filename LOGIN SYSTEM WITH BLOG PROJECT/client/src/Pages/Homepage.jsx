@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Homepage = () => {
     return (
@@ -60,9 +61,9 @@ const Homepage = () => {
                         </p>
                         {/* <!-- Buttons --> */}
                         <div className="mx-n2">
-                            <a href="#" className="btn btn-lg btn-primary shadow-sm mx-2 px-lg-8">
+                            <Link to="/notes" className="btn btn-lg btn-primary shadow-sm mx-2 px-lg-8">
                                 Get started
-                            </a>
+                            </Link>
                             <a href="#" className="btn btn-lg btn-neutral mx-2 px-lg-8">
                                 Learn more
                             </a>

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Navbar() {
+
+    const user = JSON.parse(localStorage.getItem("userData"));
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <div className="container">
@@ -62,7 +64,7 @@ export default function Navbar() {
                                 className="dropdown-menu dropdown-menu-end"
                                 aria-labelledby="userDropdown"
                             >
-                                <li className="dropdown-header">@username</li>
+                                <li className="dropdown-header">{user.name}</li>
                                 <li>
                                     <Link to="/dashboard?tab=profile" className="dropdown-item">
                                         Profile
@@ -73,7 +75,8 @@ export default function Navbar() {
                                 </li>
                                 <li>
                                     <button className="dropdown-item">Sign out</button>
-                                </li> </ul>
+                                </li>
+                            </ul>
                         </li>
 
                         <li className="nav-item">
@@ -81,6 +84,12 @@ export default function Navbar() {
                                 Sign In
                             </Link>
                         </li>
+
+                        {user?.role == "admin" && <li className="nav-item">
+                            <Link to="/all-notes" className="btn btn-outline-primary">
+                                All Notes
+                            </Link>
+                        </li>}
                     </ul>
                 </div>
             </div>

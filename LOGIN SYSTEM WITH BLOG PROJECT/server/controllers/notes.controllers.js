@@ -96,7 +96,7 @@ const updateNotes = async (req, res) => {
         if (req.file) {
             await notesModel.findByIdAndUpdate(notesId, {
                 ...req.body,
-                notesImage: req.file.originalname,
+                notesImage: req.file.filename,
             });
 
             res.status(200).json({ message: "Notes Updated Successfully" });

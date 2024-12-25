@@ -24,7 +24,7 @@ export default function Login() {
         })
         .catch((error) => {
             console.log(error);
-            toast.error(error.response.data.message);
+            toast.error("Invalid Email or Password");
         })
     };
 
