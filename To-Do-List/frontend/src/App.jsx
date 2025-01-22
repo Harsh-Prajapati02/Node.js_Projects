@@ -63,7 +63,7 @@ function App() {
 
   return (
     <div className="container p-5 text-center">
-      <h1 className="mb-5">TODO APP</h1>
+      <h1 className="mb-5">TASK MANAGER</h1>
       <div className='d-flex justify-content-between'>
         <form className='col-5 p-5' onSubmit={handleSubmit}>
           <input
