@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Captain America",
+    "powers": [
+      "mind",
+      "endurance"
+    ],
+    "health": 50,
+    "villains": [
+      {
+        "name": "Thanos",
+        "health": 100
+      }
+    ],
+    "id": 1
+  },
+  {
+    "name": "HUlk",
+    "powers": [
+      "mind",
+      "endurance"
+    ],
+    "health": 50,
+    "villains": [
+      {
+        "name": "Thanos",
+        "health": 100
+      }
+    ],
+    "id": 2
+  }
+]
