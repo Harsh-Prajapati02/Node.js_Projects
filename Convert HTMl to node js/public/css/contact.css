@@ -1,0 +1,101 @@
+/* General Reset */
+body, h1, p, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Background */
+body {
+    background: #f9f9f9;
+    padding-top: 70px; /* Account for navbar height */
+    color: #333;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px); /* Full viewport height minus navbar */
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #444;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #f0a500;
+    box-shadow: 0 0 4px rgba(240, 165, 0, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+button.submit-button {
+    background-color: #f0a500;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.submit-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}

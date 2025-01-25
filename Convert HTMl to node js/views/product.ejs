@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <!-- Navbar -->
+   <%- include('navbar') %>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="products-container">
+            <h1>Our Products</h1>
+            <div class="product-grid">
+                <% products.forEach(product => { %>
+                    <div class="product-card">
+                        <img src="<%= product.image %>" alt="<%= product.name %>">
+                        <h2><%= product.title %></h2>
+                        <p class="price">$<%= product.price.toFixed(2) %></p>
+                        <p class="description"><%= product.description %></p>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

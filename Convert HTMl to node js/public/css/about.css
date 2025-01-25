@@ -1,0 +1,37 @@
+/* About Page Styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    background: #f9f9f9;
+    padding-top: 70px; /* To account for the fixed navbar */
+}
+
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
