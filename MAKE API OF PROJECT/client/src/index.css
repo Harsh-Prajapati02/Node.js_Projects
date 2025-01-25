@@ -1,0 +1,53 @@
+nav {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+}
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a, nav ul li button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

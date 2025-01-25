@@ -1,0 +1,83 @@
+/* Signup.module.css */
+.container {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: slideDown 1s ease;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.input, .select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus, .select:focus {
+  border-color: #d76d77;
+  box-shadow: 0 0 8px rgba(215, 109, 119, 0.4);
+}
+
+.button {
+  background: linear-gradient(120deg, #d76d77, #ffaf7b);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(215, 109, 119, 0.4);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(215, 109, 119, 0.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
